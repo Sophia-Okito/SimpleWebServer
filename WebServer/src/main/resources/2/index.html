@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>LegendTravels</title>
+    <script src="https://kit.fontawesome.com/4c9e8f0d19.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding:0;
+        }
+        body{
+            background-color: #fbfbfb;
+            font-family: ubuntu,sans-serif;
+        }
+        li{
+            list-style: none;
+            display:inline-block;
+        }
+        a{
+            text-decoration: none;
+        }
+        .container{
+            max-width:1400px;
+            margin: 0 auto;
+            background: #fff;
+        }
+        span{
+            color:#FA8C0F;
+        }
+
+        /* Header*/
+        header .header-text{
+            background-color:#2E3138;
+            color:#fff;
+            font-family:pacifico, cursive;
+            padding-left:50px;
+        }
+        header span{
+            color:#FA8C0F;
+            padding-left:5px;
+        }
+        /*nav menu*/
+        .nav-menu{
+            padding: 10px 0 12px 120px;
+        }
+        .nav-menu a{
+            color:#ccc;
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+        .nav-menu a:hover{
+            color: #2E3138;
+            font-weight:600;
+        }
+        .nav-menu li {
+            padding:20px;
+        }
+        /*Header Image*/
+        .header-image{
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+            background-size:cover;
+            background-position: center;
+            height:500px;
+            color:#fff;
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction: column;
+        }
+        .header-image h2{
+            font-weight:300;
+            text-transform: uppercase;
+            font-size: 35px;
+        }
+        .header-image p{
+            margin: 20px 170px;
+            text-align: center;
+        }
+        /* Journey ways*/
+        .journey-ways{
+            width:90%;
+            margin:auto;
+            padding: 70px 70px 40px;
+        }
+        .journey-ways h2{
+            text-align: center;
+            text-transform: uppercase;
+            color:#2E3138;
+            font-size: 35px;
+            font-weight: 300;
+        }
+        #journey-text{
+            color:#2E3138;
+            text-align: center;
+            margin-top: 15px;
+        }
+        .ways{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .travel{
+            width: 30%;
+        }
+        .travel:nth-child(2){
+            margin-top: 20px;
+        }
+        .travel h3{
+            text-align: center;
+            text-transform: uppercase;
+            color:#2E3138;
+            font-weight: 300;
+            margin-top: 30px;
+        }
+        .travel p{
+            margin-top: 10px;
+            color:#2E3138;
+        }
+        /*cities*/
+        .city-images{
+            padding:40px;
+            background-color: rgb(223, 217, 211);
+            color: #2E3138;
+        }
+        .cities{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .city-image{
+            width: 30%;
+            margin-bottom: 25px;
+            background-color: #fbfbfb;
+            box-shadow: 5px 10px 8px #888888;
+        }
+        .city-image img{
+            width:100%;
+        }
+        .city-image h3{
+            padding:15px;
+        }
+        .city-image p {
+            padding: 0 15px 10px;
+        }
+        /*Footer*/
+        footer{
+            padding: 10px;
+            background-color: #2E3138;
+            color:#fff;
+        }
+
+        @media (min-width:200px) and (max-width:700px){
+            header .header-text{
+                font-size:20px;
+                padding: 5px 50px 5px 120px;
+            }
+            .nav-menu{
+                padding: 5px 5px 5px 15px;
+            }
+            .nav-menu a{
+                font-size: 12px;
+            }
+            .nav-menu li{
+                padding:5px;
+            }
+            .header-image{
+                display:block;
+                height: 300px;
+            }
+            .header-image h2{
+                padding-top:60px;
+                font-size: 18px;
+                text-align: center;
+
+            }
+            .header-image p{
+                font-size:12px;
+                text-align: center;
+                width:80%;
+                margin:15px auto;
+            }
+            .journey-ways h2{
+                font-size:18px;
+                padding:5px;
+            }
+            .ways{
+                display: block;
+            }
+            .fas{
+                font-size:20px;
+            }
+            .fa-ship{
+                font-size:100px;
+            }
+            .travel{
+                width:95%;
+                margin-top:50px;
+            }
+
+
+            .cities{
+                display:block;
+            }
+            .city-image{
+                width: 95%;
+                margin: 30px auto;
+            }
+            footer{
+                text-align:center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="header-text">Legend<span>Travels</span></h1>
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Visit</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="header-image">
+                <h2>Travel the world</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, natus deserunt sunt accusamus saepe quidem voluptates perspiciatis ex dolorum doloremque harum praesentium! Debitis ea voluptate odit itaque nulla? Quas explicabo odit autem. Quibusdam repellendus autem ab natus itaque porro. Temporibus similique nulla qui pariatur consectetur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, asperiores provident quas pariatur atque velit mollitia fuga id iusto temporibus!</p>
+            </div>
+        </header>
+        <section class="journey-ways">
+        <h2>ways to travel with <span>us</span></h2>
+            <p id="journey-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti tempora, amet quod pariatur ipsum voluptates inventore explicabo repellat magni! Fugit obcaecati neque enim quibusdam, totam sunt asperiores accusamus nesciunt? Explicabo? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, tempore.</p>
+            <div class="ways">
+                <div class="travel">
+                    <i class="fas fa-bus" style="font-size:150px; color:#2E3138;" ></i>
+                    <h3>Travel with Bus</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse unde modi impedit pariatur sapiente earum non mollitia consectetur nesciunt aut.</p>
+                </div>
+                <div class="travel">
+                    <i class="fas fa-plane" style="font-size:150px; color:#FA8C0F;" ></i>
+                    <h3>Travel with <span>Airplane</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse unde modi impedit pariatur sapiente earum non mollitia consectetur nesciunt aut.</p>
+                </div>
+                <div class="travel">
+                    <i class="fas fa-ship" style="font-size:150px; color:#2E3138;" ></i>
+                    <h3>Travel with Ship</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse unde modi impedit pariatur sapiente earum non mollitia consectetur nesciunt aut.</p>
+                </div>
+            </div>
+        </section>
+        <section class="city-images">
+            <div class="cities">
+                <div class="city-image">
+                    <h3>Amsterdam</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci delectus cum sequi, doloremque quos aliquam...</p>
+                </div>
+                <div class="city-image">
+                    <h3>Venice</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci delectus cum sequi, doloremque quos aliquam...</p>
+                </div>
+                <div class="city-image">
+                    <h3>London</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci delectus cum sequi, doloremque quos aliquam...</p>
+                </div>
+                <div class="city-image">
+                    <h3>Moscow</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci delectus cum sequi, doloremque quos aliquam...</p>
+                </div>
+                <div class="city-image">
+                    <h3>New York</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci delectus cum sequi, doloremque quos aliquam...</p>
+                </div>
+                <div class="city-image">
+                    <h3>Paris</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci delectus cum sequi, doloremque quos aliquam...</p>
+                </div>
+            </div>
+        </section>
+        <footer><p>&copy; Copyright LegendTravels, 2020</p></footer>
+    </div>
+
+</body>
+</html>
